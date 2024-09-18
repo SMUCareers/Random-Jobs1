@@ -57,7 +57,6 @@ const jobs = [
   'Travel agent', 'Typist', 'Undertaker', 'Video Game Tester', 'Veterinary surgeon', 
   'Waiting staff', 'Window cleaner', 'Zookeeper'
 ];
- 
 
 function getDayOfYear(date) {
     const start = new Date(date.getFullYear(), 0, 0); // January 1st of the given year
@@ -80,7 +79,6 @@ document.getElementById('getJobButton').addEventListener('click', function() {
 
     document.getElementById('jobDisplay').innerText = job;
     document.getElementById('birthday').style.display = 'none'; // Hide the date input
-    }
 
     const tadaSound = document.getElementById('tadaSound');
     tadaSound.currentTime = 0; // Reset sound
@@ -88,7 +86,8 @@ document.getElementById('getJobButton').addEventListener('click', function() {
 });
 
 document.getElementById('resetButton').addEventListener('click', function() {
-    document.getElementById('birthday').value = '';
-    dateInput.style.display = 'inline'; // Show the date input
-    document.getElementById('jobDisplay').innerText = '';
+    const dateInput = document.getElementById('birthday');
+    dateInput.value = ''; // Clear the date input
+    dateInput.style.display = 'inline'; // Show the date input again
+    document.getElementById('jobDisplay').innerText = ''; // Clear the job display
 });
