@@ -87,3 +87,35 @@ h2 {
     font-size: 92px; /* Slight font increase on hover for fun effect */
     color: #6dd5ed;  /* Color change on hover */
 }
+
+/* Container styling to center content */
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Ensure the footer takes up space and is at the bottom */
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1; /* Optional background color for better visibility */
+}
+
+/* Ensure the body fills the viewport and footer is at the bottom */
+body {
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make sure the container grows to fill available space */
+.container {
+    flex-grow: 1;
+}
