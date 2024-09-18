@@ -58,6 +58,8 @@ const jobs = [
   'Waiting staff', 'Window cleaner', 'Zookeeper'
 ];
 
+const clickSound = new Audio('sounds/tada.mp3');
+
 function getDayOfYear(date) {
     const start = new Date(date.getFullYear(), 0, 0); // January 1st of the given year
     const diff = date - start + (start.getTimezoneOffset() - date.getTimezoneOffset()) * 60 * 1000;
@@ -65,13 +67,16 @@ function getDayOfYear(date) {
     return Math.floor(diff / oneDay);
 }
 
-// Function to display the job
+// Function to display the job and play sound
 function displayJob() {
     const dateInput = document.getElementById('birthday').value;
     if (!dateInput) {
         alert('Please select your birthday!');
         return;
     }
+
+    // Play the sound
+    clickSound.play();
 
     const birthDate = new Date(dateInput);
     const dayOfYear = getDayOfYear(birthDate); // Get the day of the year (1-365)
