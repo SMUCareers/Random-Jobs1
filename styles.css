@@ -63,8 +63,8 @@ h2 {
 
 /* Updated job display styling */
 #jobDisplay {
-    font-size: 40px; /* Bigger font size for emphasis */
-    font-weight: 700;
+    font-size: 80px; /* Bigger font size for emphasis */
+    font-weight: 900;
     color: #2193b0; /* Make the result color pop */
     margin-top: 20px;
     padding: 20px;
@@ -75,6 +75,6 @@ h2 {
 }
 
 #jobDisplay:hover {
-    font-size: 42px; /* Slight font increase on hover for fun effect */
+    font-size: 92px; /* Slight font increase on hover for fun effect */
     color: #6dd5ed;  /* Color change on hover */
 }
