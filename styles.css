@@ -15,8 +15,8 @@ body {
 
 .logo {
     position: absolute;
-    left: 20px; /* Adjust to your preference */
-    top: 20px; /* Adjust to your preference */
+    left: 10px; /* Adjust to your preference */
+    top: 10px; /* Adjust to your preference */
     width: 100px; /* Adjust size if needed */
     height: auto; /* Maintain aspect ratio */
 }
