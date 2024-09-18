@@ -80,6 +80,7 @@ document.getElementById('getJobButton').addEventListener('click', function() {
 
     document.getElementById('jobDisplay').innerText = job;
     document.getElementById('birthday').style.display = 'none'; // Hide the date input
+    }
 
     const tadaSound = document.getElementById('tadaSound');
     tadaSound.currentTime = 0; // Reset sound
