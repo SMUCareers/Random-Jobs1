@@ -65,16 +65,13 @@ function getDayOfYear(date) {
     return Math.floor(diff / oneDay);
 }
 
-const clickSound = new Audio('sounds/tada.mp3');
-
-document.getElementById('getJobButton').addEventListener('click', function() {
+// Function to display the job
+function displayJob() {
     const dateInput = document.getElementById('birthday').value;
     if (!dateInput) {
         alert('Please select your birthday!');
         return;
     }
-
-    clickSound.play();
 
     const birthDate = new Date(dateInput);
     const dayOfYear = getDayOfYear(birthDate); // Get the day of the year (1-365)
@@ -83,8 +80,19 @@ document.getElementById('getJobButton').addEventListener('click', function() {
 
     document.getElementById('jobDisplay').innerText = job;
     document.getElementById('birthday').style.display = 'none'; // Hide the date input
+}
+
+// Event listener for the button click
+document.getElementById('getJobButton').addEventListener('click', displayJob);
+
+// Event listener for the "Enter" key press in the date input
+document.getElementById('birthday').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        displayJob(); // Trigger the job display when Enter is pressed
+    }
 });
 
+// Reset button functionality
 document.getElementById('resetButton').addEventListener('click', function() {
     const dateInput = document.getElementById('birthday');
     dateInput.value = ''; // Clear the date input
