@@ -79,6 +79,7 @@ document.getElementById('getJobButton').addEventListener('click', function() {
     const job = jobs[jobIndex];
 
     document.getElementById('jobDisplay').innerText = job;
+    document.getElementById('birthday').style.display = 'none'; // Hide the date input
 
     const tadaSound = document.getElementById('tadaSound');
     tadaSound.currentTime = 0; // Reset sound
@@ -87,5 +88,6 @@ document.getElementById('getJobButton').addEventListener('click', function() {
 
 document.getElementById('resetButton').addEventListener('click', function() {
     document.getElementById('birthday').value = '';
+    dateInput.style.display = 'inline'; // Show the date input
     document.getElementById('jobDisplay').innerText = '';
 });
