@@ -65,12 +65,16 @@ function getDayOfYear(date) {
     return Math.floor(diff / oneDay);
 }
 
+const clickSound = new Audio('sounds/tada.mp3');
+
 document.getElementById('getJobButton').addEventListener('click', function() {
     const dateInput = document.getElementById('birthday').value;
     if (!dateInput) {
         alert('Please select your birthday!');
         return;
     }
+
+    clickSound.play();
 
     const birthDate = new Date(dateInput);
     const dayOfYear = getDayOfYear(birthDate); // Get the day of the year (1-365)
