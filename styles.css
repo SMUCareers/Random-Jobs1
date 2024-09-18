@@ -12,6 +12,15 @@ body {
     color: #333;
 }
 
+
+.logo {
+    position: absolute;
+    left: 20px; /* Adjust to your preference */
+    top: 20px; /* Adjust to your preference */
+    width: 100px; /* Adjust size if needed */
+    height: auto; /* Maintain aspect ratio */
+}
+    
 .container {
     background-color: white;
     padding: 30px;
