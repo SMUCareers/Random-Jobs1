@@ -18,7 +18,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
 }
 
@@ -63,9 +63,9 @@ h2 {
 
 /* Updated job display styling */
 #jobDisplay {
-    font-size: 80px; /* Bigger font size for emphasis */
-    font-weight: 900;
-    color: #2193b0; /* Make the result color pop */
+    font-size: 60px; /* Bigger font size for emphasis */
+    font-weight: 700;
+    color: #003366; /* Make the result color pop */
     margin-top: 20px;
     padding: 20px;
     background-color: #f9f9f9;
